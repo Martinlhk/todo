@@ -42,12 +42,13 @@ export default {
   },
   methods: {
     async performLogin () {
-      if (true || await this.$services.login.performLogin(this.username, this.password) ) {
-        this.$router.push('todo')
-      } else {
-        this.username = ''
-        this.password = ''
-      }
+      this.$router.push('todo')
+      //if (true || await this.$services.login.performLogin(this.username, this.password) ) {
+      //  this.$router.push('todo')
+      //} else {
+      //  this.username = ''
+      //  this.password = ''
+      //}
     }
   }
 }
